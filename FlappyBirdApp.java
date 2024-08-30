@@ -22,6 +22,14 @@ public class FlappyBirdApp {
         // Fixing the dimension problem, dimensions will start after the title bar
         gameWindow.pack();
 
+        // Creating FlappyBirdGame object
+        FlappyBirdGame game = new FlappyBirdGame(boardWidth, boardHeight);
+        // Adding game object to the game window
+        gameWindow.add(game);
+        // Requesting to get input focus
+        game.requestFocus();
+
+
         // Set game window visible
         gameWindow.setVisible(true);
     }
