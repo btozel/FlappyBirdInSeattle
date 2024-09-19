@@ -21,4 +21,43 @@ abstract class GameElements {
 
     abstract void move();
 
+    public int getXPosition() {
+        return xPosition;
+    }
+
+    public void setXPosition(int xPosition) {
+        this.xPosition = xPosition;
+    }
+
+    public int getYPosition() {
+        return yPosition;
+    }
+
+    public void setYPosition(int yPosition) {
+        this.yPosition = yPosition;
+    }
+
+    public int getWidthOfObject() {
+        return widthOfObject;
+    }
+
+    public void setWidthOfObject(int widthOfObject) {
+        this.widthOfObject = widthOfObject;
+    }
+
+    public int getHeightOfObject() {
+        return heightOfObject;
+    }
+
+    public void setHeightOfObject(int heightOfObject) {
+        this.heightOfObject = heightOfObject;
+    }
+
+    public Image getImage() {
+        return image;
+    }
+
+    public void setImage(Image image) {
+        this.image = image;
+    }
 }

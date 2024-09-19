@@ -29,7 +29,7 @@ public class FlappyBirdApp {
         // Requesting to get input focus
         game.requestFocus();
 
-        
+
         // Set game window visible
         gameWindow.setVisible(true);
     }
