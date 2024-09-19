@@ -24,6 +24,9 @@ public class Bird extends GameElements{
     void move() {
         jumpingRate -= gravityRate;
         yPosition = yPosition - jumpingRate;
+        // Bird shouldn't move outside the window, top of the window is 0 because left top corner is (0,0)
+        // So bird's Y location shouldn't be less than 0
+        yPosition = Math.max(0,yPosition);
     }
 
 
